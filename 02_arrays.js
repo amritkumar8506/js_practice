@@ -227,6 +227,14 @@
 // })
 // console.log(Count);
 
+// Q24. Given a string with numbers, extract all digits and return as an array.
+// Input: "a1b2c3" → Output: [1, 2, 3]
+
+let str = "a1b2c3"
+let newstr = str.split("");
+newstr = newstr.filter((curElem) => !isNaN(curElem) && curElem !== " ")
+newstr = newstr.map(Number)
+console.log(newstr);
 
 
 
