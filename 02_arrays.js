@@ -240,22 +240,49 @@
 // Q25. Write a function that checks whether two strings are anagrams.
 // Input: "listen" and "silent" → Output: true
 
-let input = "listen,silent";
-let newinput = input.split(",");
+// let input = "listen,silent";
+// let newinput = input.split(",");
 
 
-let newstr = newinput.map((curElem) => {
-    return curElem.split("").sort().join("")
-});
-if (newstr[0] === newstr[1]) {
-    console.log("Yes it's anagram");
+// let newstr = newinput.map((curElem) => {
+//     return curElem.split("").sort().join("")
+// });
+// if (newstr[0] === newstr[1]) {
+//     console.log("Yes it's anagram");
 
-} else {
-    console.log("No it's not anagram");
+// } else {
+//     console.log("No it's not anagram");
 
-}
+// }
 
 
+// Q26. Create an object from two arrays: one for keys and one for values.
+// Input: ["name", "age"] and ["John", 30] → Output: { name: "John", age: 30 }
+
+// let key = ["name", "age"]
+// let value = ["John", 30]
+// let obj = Object.fromEntries(key.map((key, index) => [key, value[index]]))
+// console.log(obj);
+
+
+// Q27. Write a function that removes duplicate values from an array and returns the result.
+// Input: [1, 2, 2, 3, 4, 4, 5] → Output: [1, 2, 3, 4, 5]
+
+// let arr = [1, 2, 2, 3, 4, 4, 5];
+// let newarr = [...new Set(arr)]
+// console.log(newarr);
+
+// Q28. You’re given an array of user objects. Extract all unique user roles.
+// let users = [
+//     { name: "Alice", role: "admin" },
+//     { name: "Bob", role: "editor" },
+//     { name: "Eve", role: "admin" },
+// ];
+// Expected Output: ["admin", "editor"]
+
+// let roles = users.map((users) => users.role)
+// uniqueroles = [...new Set(roles)]
+// console.log(uniqueroles);
 
 
 
