@@ -230,11 +230,32 @@
 // Q24. Given a string with numbers, extract all digits and return as an array.
 // Input: "a1b2c3" → Output: [1, 2, 3]
 
-let str = "a1b2c3"
-let newstr = str.split("");
-newstr = newstr.filter((curElem) => !isNaN(curElem) && curElem !== " ")
-newstr = newstr.map(Number)
-console.log(newstr);
+// let str = "a1b2c3"
+// let newstr = str.split("");
+// newstr = newstr.filter((curElem) => !isNaN(curElem) && curElem !== " ")
+// newstr = newstr.map(Number)
+// console.log(newstr);
+
+
+// Q25. Write a function that checks whether two strings are anagrams.
+// Input: "listen" and "silent" → Output: true
+
+let input = "listen,silent";
+let newinput = input.split(",");
+
+
+let newstr = newinput.map((curElem) => {
+    return curElem.split("").sort().join("")
+});
+if (newstr[0] === newstr[1]) {
+    console.log("Yes it's anagram");
+
+} else {
+    console.log("No it's not anagram");
+
+}
+
+
 
 
 
