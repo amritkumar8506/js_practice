@@ -294,11 +294,23 @@
 
 // Q30) Find the second largest number in an array.
 
-let arr = [10, 50, 60, 30, 80]
-let largest = Math.max(...arr)
-let secondLargest = Math.max(...arr.filter((curElem) => curElem !== largest))
-console.log(secondLargest);
+// let arr = [10, 50, 60, 30, 80]
+// let largest = Math.max(...arr)
+// let secondLargest = Math.max(...arr.filter((curElem) => curElem !== largest))
+// console.log(secondLargest);
 
+// Q31) Find the 3rd largest number in an array.
+
+// DIIFERENT WAY->
+
+// (a - b) → ascending (chhota → bada)
+
+// (b - a) → descending (bada → chhota)
+
+let arr = [10, 50, 60, 60, 30, 80]
+let newarr = [...new Set(arr)].sort((a, b) => b - a)
+let thirdLargest = newarr[2]
+console.log(thirdLargest);
 
 
 
