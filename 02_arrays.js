@@ -307,10 +307,46 @@
 
 // (b - a) → descending (bada → chhota)
 
-let arr = [10, 50, 60, 60, 30, 80]
-let newarr = [...new Set(arr)].sort((a, b) => b - a)
-let thirdLargest = newarr[2]
-console.log(thirdLargest);
+// let arr = [10, 50, 60, 60, 30, 80]
+// let newarr = [...new Set(arr)].sort((a, b) => b - a)
+// let thirdLargest = newarr[2]
+// console.log(thirdLargest);
+
+
+// Q32)Rotate an array by k positions.
+
+// (Right Rotation):
+
+// arr = [1,2,3,4,5], k = 2
+// 2 step right rotate karne ke baad →
+// [4,5,1,2,3]
+
+
+// let arr = [1, 2, 3, 4, 5]
+// let k = 2;
+// let lastPart = arr.slice(-k);
+// let firstPart = arr.slice(0, arr.length - k)
+// let rotated = lastPart.concat(firstPart)
+// console.log(rotated);
+
+//---------------------------------------------------------------------------
+
+// (Left Rotation):
+
+// arr = [1,2,3,4,5], k = 2
+// 2 step left rotate karne ke baad →
+// [3,4,5,1,2]
+
+
+// let arr = [1, 2, 3, 4, 5]
+// let k = 2;
+// let firstPart = arr.slice(0, k)
+// let lastPart = arr.slice(k, arr.length)
+// let rotated = lastPart.concat(firstPart)
+// console.log(rotated);
+
+
+
 
 
 
