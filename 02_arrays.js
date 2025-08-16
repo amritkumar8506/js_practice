@@ -292,6 +292,15 @@
 // console.log(newarr);
 
 
+// Q30) Find the second largest number in an array.
+
+let arr = [10, 50, 60, 30, 80]
+let largest = Math.max(...arr)
+let secondLargest = Math.max(...arr.filter((curElem) => curElem !== largest))
+console.log(secondLargest);
+
+
+
 
 
 
