@@ -284,6 +284,14 @@
 // uniqueroles = [...new Set(roles)]
 // console.log(uniqueroles);
 
+// Q29)Remove all duplicates from an array without using Set.
+
+// Input: [1, 2, 2, 3, 4, 4, 5] → Output: [1, 2, 3, 4, 5]
+// let arr = [1, 2, 2, 3, 4, 4, 5];
+// let newarr = arr.filter((curElem, index) => arr.indexOf(curElem) == index)
+// console.log(newarr);
+
+
 
 
 
