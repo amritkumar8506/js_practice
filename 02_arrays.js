@@ -348,13 +348,41 @@
 
 // Q33)Merge two sorted arrays into a single sorted array.
 
-let arr1 = [1, 3, 10, 5]
-let arr2 = [2, 4, 6, 17]
+// let arr1 = [1, 3, 10, 5]
+// let arr2 = [2, 4, 6, 17]
 
 // Result → [1, 2, 3, 4, 5, 6]
-let newarr = arr1.concat(arr2)
-let result = newarr.sort((a, b) => (a - b));
-console.log(result);
+// let newarr = arr1.concat(arr2)
+// let result = newarr.sort((a, b) => (a - b));
+// console.log(result);
+
+
+// Q34)Count the frequency of each element in an array.
+
+// OUTPUT->
+// 1 → 1 time
+// 2 → 2 times
+// 3 → 3 times
+
+
+
+let arr = [1, 2, 2, 3, 3, 3, 3, 3]
+let result = {};
+let newarr = arr.forEach((curElem) => {
+    if (result[curElem]) {
+        result[curElem] += 1
+    }
+    else {
+        result[curElem] = 1
+    }
+})
+// console.log(result);//->OUTPUT={ '1': 1, '2': 2, '3': 5 }
+
+for (let key in result) {
+    let timesText = result[key] === 1 ? "time" : "times";
+    console.log(`${key} → ${result[key]} ${timesText}`);
+}
+
 
 
 
