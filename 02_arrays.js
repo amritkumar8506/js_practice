@@ -346,6 +346,18 @@
 // console.log(rotated);
 
 
+// Q33)Merge two sorted arrays into a single sorted array.
+
+let arr1 = [1, 3, 10, 5]
+let arr2 = [2, 4, 6, 17]
+
+// Result → [1, 2, 3, 4, 5, 6]
+let newarr = arr1.concat(arr2)
+let result = newarr.sort((a, b) => (a - b));
+console.log(result);
+
+
+
 
 
 
