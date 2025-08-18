@@ -366,27 +366,44 @@
 
 
 
-let arr = [1, 2, 2, 3, 3, 3, 3, 3]
-let result = {};
-let newarr = arr.forEach((curElem) => {
-    if (result[curElem]) {
-        result[curElem] += 1
-    }
-    else {
-        result[curElem] = 1
-    }
-})
+// let arr = [1, 2, 2, 3, 3, 3, 3, 3]
+// let result = {};
+// let newarr = arr.forEach((curElem) => {
+//     if (result[curElem]) {
+//         result[curElem] += 1
+//     }
+//     else {
+//         result[curElem] = 1
+//     }
+// })
 // console.log(result);//->OUTPUT={ '1': 1, '2': 2, '3': 5 }
 
-for (let key in result) {
-    let timesText = result[key] === 1 ? "time" : "times";
-    console.log(`${key} → ${result[key]} ${timesText}`);
-}
+// for (let key in result) {
+//     let timesText = result[key] === 1 ? "time" : "times";
+//     console.log(`${key} → ${result[key]} ${timesText}`);
+// }
 
 
 
+// Q35)
+
+// Input: nums = [2,7,11,15], target = 9
+// Output: [0,1]
+// Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+
+let nums = [2, 7, 11, 15]
+let target = 9;
 
 
+let newNum = nums.forEach((curELem, index) => {
+    let need = target - curELem;
+    if (nums.includes(need)) {
+        console.log(index, nums.indexOf(need));
+
+
+    }
+
+})
 
 
 
