@@ -385,25 +385,39 @@
 
 
 
-// Q35)
+// Q35) TWO SUM -leedCode
 
 // Input: nums = [2,7,11,15], target = 9
 // Output: [0,1]
 // Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
-let nums = [2, 7, 11, 15]
-let target = 9;
+// let nums = [2, 7, 11, 15]
+// let target = 9;
 
 
-let newNum = nums.forEach((curELem, index) => {
-    let need = target - curELem;
-    if (nums.includes(need)) {
-        console.log(index, nums.indexOf(need));
+// nums.forEach((curELem, index) => {
+//     let need = target - curELem;
+//     if (nums.includes(need)) {
+//         console.log(index, nums.indexOf(need));
 
 
-    }
+//     }
 
-})
+// })
+
+
+
+// Q36 Move all zeros to the end of the array.
+
+
+// arr=[0, 1, 9, 8, 4, 0, 0, 2, 7, 0] -> OUTPUT=[1, 9, 8, 4, 2, 7, 0, 0, 0, 0]
+
+let arr = [0, 1, 9, 8, 4, 0, 0, 2, 7, 0]
+let nonZero = arr.filter((curElem) => curElem !== 0)
+let zeroarr = arr.filter((curElem) => curElem === 0)
+
+let result = nonZero.concat(zeroarr)
+console.log(result);
 
 
 
