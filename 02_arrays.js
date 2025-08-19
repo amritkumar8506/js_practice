@@ -422,14 +422,31 @@
 
 // Q37)Find all pairs in an array whose sum equals a target number.
 
-let arr = [2, 7, 11, 15]
-let target = 9
-let newarr = arr.forEach((curElem, index) => {
-    let need = target - curElem;
-    if (arr.includes(need)) {
-        console.log(index, arr.indexOf(need));
+// let arr = [2, 7, 11, 15]
+// let target = 9
+// let newarr = arr.forEach((curElem, index) => {
+//     let need = target - curElem;
+//     if (arr.includes(need)) {
+//         console.log(index, arr.indexOf(need));
+
+//     }
+// })
+
+// Q38)Check if an array is a subset of another array.
+
+
+let arr1 = [1, 3, 4, 6]
+let arr2 = [1, 2, 3, 4, 5]
+let isSubset = true;
+
+let newarrr = arr1.forEach((curElem) => {
+    if (!arr2.includes(curElem)) {
+        isSubset = false;
 
     }
 })
-
-
+if (isSubset) {
+    console.log("arr1 is a subset of arr2");
+} else {
+    console.log("arr1 is NOT a subset of arr2");
+}
