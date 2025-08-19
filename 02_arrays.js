@@ -458,11 +458,37 @@
 // arr2 = [3, 4, 5, 6]
 // Common elements = [3, 4]
 
-let arr1 = [1, 2, 3, 4]
-let arr2 = [3, 4, 5, 6]
+// let arr1 = [1, 2, 3, 4]
+// let arr2 = [3, 4, 5, 6]
+// let result = [];
+// let newarr = arr1.forEach((curElem) => {
+//     if (arr2.includes(curElem))
+//         result.push(curElem)
+// })
+// console.log(result);
+
+
+// Q40) Flatten a deeply nested array without using flat().  
+
+//  Input: [1, [2, [3, 4]], 5] → Output: [1, 2, 3, 4, 5]
+
+let arr = [1, [2, [3, 4]], 5];
 let result = [];
-let newarr = arr1.forEach((curElem) => {
-    if (arr2.includes(curElem))
-        result.push(curElem)
-})
+
+function flattenArray(array) {
+    array.forEach((curElem) => {
+        if (Array.isArray(curElem)) {
+            // Agar element array hai → recursion call
+            flattenArray(curElem);
+        } else {
+            // Agar element non-array → result me push
+            result.push(curElem);
+        }
+    })
+}
+
+// Function call
+flattenArray(arr);
+
 console.log(result);
+// Output: [1, 2, 3, 4, 5]
