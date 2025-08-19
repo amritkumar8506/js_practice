@@ -412,16 +412,24 @@
 
 // arr=[0, 1, 9, 8, 4, 0, 0, 2, 7, 0] -> OUTPUT=[1, 9, 8, 4, 2, 7, 0, 0, 0, 0]
 
-let arr = [0, 1, 9, 8, 4, 0, 0, 2, 7, 0]
-let nonZero = arr.filter((curElem) => curElem !== 0)
-let zeroarr = arr.filter((curElem) => curElem === 0)
+// let arr = [0, 1, 9, 8, 4, 0, 0, 2, 7, 0]
+// let nonZero = arr.filter((curElem) => curElem !== 0)
+// let zeroarr = arr.filter((curElem) => curElem === 0)
 
-let result = nonZero.concat(zeroarr)
-console.log(result);
-
-
+// let result = nonZero.concat(zeroarr)
+// console.log(result);
 
 
+// Q37)Find all pairs in an array whose sum equals a target number.
 
+let arr = [2, 7, 11, 15]
+let target = 9
+let newarr = arr.forEach((curElem, index) => {
+    let need = target - curElem;
+    if (arr.includes(need)) {
+        console.log(index, arr.indexOf(need));
+
+    }
+})
 
 
