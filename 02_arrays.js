@@ -435,18 +435,34 @@
 // Q38)Check if an array is a subset of another array.
 
 
-let arr1 = [1, 3, 4, 6]
-let arr2 = [1, 2, 3, 4, 5]
-let isSubset = true;
+// let arr1 = [1, 3, 4, 6]
+// let arr2 = [1, 2, 3, 4, 5]
+// let isSubset = true;
 
-let newarrr = arr1.forEach((curElem) => {
-    if (!arr2.includes(curElem)) {
-        isSubset = false;
+// let newarrr = arr1.forEach((curElem) => {
+//     if (!arr2.includes(curElem)) {
+//         isSubset = false;
 
-    }
+//     }
+// })
+// if (isSubset) {
+//     console.log("arr1 is a subset of arr2");
+// } else {
+//     console.log("arr1 is NOT a subset of arr2");
+// }
+
+
+// Q39)Find the intersection of two arrays.
+
+// arr1 = [1, 2, 3, 4]  
+// arr2 = [3, 4, 5, 6]
+// Common elements = [3, 4]
+
+let arr1 = [1, 2, 3, 4]
+let arr2 = [3, 4, 5, 6]
+let result = [];
+let newarr = arr1.forEach((curElem) => {
+    if (arr2.includes(curElem))
+        result.push(curElem)
 })
-if (isSubset) {
-    console.log("arr1 is a subset of arr2");
-} else {
-    console.log("arr1 is NOT a subset of arr2");
-}
+console.log(result);
