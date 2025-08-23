@@ -454,7 +454,7 @@
 
 // Q39)Find the intersection of two arrays.
 
-// arr1 = [1, 2, 3, 4]  
+// arr1 = [1, 2, 3, 4]
 // arr2 = [3, 4, 5, 6]
 // Common elements = [3, 4]
 
@@ -468,27 +468,27 @@
 // console.log(result);
 
 
-// Q40) Flatten a deeply nested array without using flat().  
+// Q40) Flatten a deeply nested array without using flat().
 
 //  Input: [1, [2, [3, 4]], 5] → Output: [1, 2, 3, 4, 5]
 
-let arr = [1, [2, [3, 4]], 5];
-let result = [];
+// let arr = [1, [2, [3, 4]], 5];
+// let result = [];
 
-function flattenArray(array) {
-    array.forEach((curElem) => {
-        if (Array.isArray(curElem)) {
-            // Agar element array hai → recursion call
-            flattenArray(curElem);
-        } else {
-            // Agar element non-array → result me push
-            result.push(curElem);
-        }
-    })
-}
+// function flattenArray(array) {
+//     array.forEach((curElem) => {
+// if (Array.isArray(curElem)) {
+// Agar element array hai → recursion call
+// flattenArray(curElem);
+// } else {
+// Agar element non-array → result me push
+//             result.push(curElem);
+//         }
+//     })
+// }
 
 // Function call
-flattenArray(arr);
+// flattenArray(arr);
 
-console.log(result);
+// console.log(result);
 // Output: [1, 2, 3, 4, 5]
