@@ -236,6 +236,9 @@
 // newstr = newstr.map(Number)
 // console.log(newstr);
 
+// "a" → isNaN("a") = true → !true = false → skip
+
+// "1" → isNaN("1") = false → !false = true → keep
 
 // Q25. Write a function that checks whether two strings are anagrams.
 // Input: "listen" and "silent" → Output: true
