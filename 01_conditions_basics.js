@@ -114,3 +114,18 @@
 
 // }
 
+// Q9 Check Palindrome (121->121)
+
+let i = 121;
+let original = i;
+let reverse = 0;
+while (i > 0) {
+    let digit = i % 10;
+    reverse = reverse * 10 + digit;
+    i = Math.floor(i / 10);
+}
+if (original === reverse) {
+    console.log("it is a palindrome");
+} else {
+    console.log("it is not a palindrome");
+}
