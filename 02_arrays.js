@@ -500,23 +500,54 @@
 // Q41) Find the union of two arrays (unique elements only).
 // 👉 Input: [1,2,3], [2,3,4] → Output: [1,2,3,4]
 
-let arr1 = [1, 2, 3]
-let arr2 = [2, 3, 4]
-let result = []
-// arr1 ke elements add karo
-arr1.forEach((curElem) => {
-    if (!result.includes(curElem)) {
-        result.push(curElem);
+// let arr1 = [1, 2, 3]
+// let arr2 = [2, 3, 4]
+// let result = []
+// // arr1 ke elements add karo
+// arr1.forEach((curElem) => {
+//     if (!result.includes(curElem)) {
+//         result.push(curElem);
+//     }
+// });
+
+// // arr2 ke elements add karo
+// arr2.forEach((curElem) => {
+//     if (!result.includes(curElem)) {
+//         result.push(curElem);
+//     }
+// });
+
+// console.log("Union is", result);
+
+// //If you have more than two arrays and don't want to apply forEach on each array separately, just put all the arrays in a single array (let allArr = [arr1, arr2, arr3]). Then, first run a forEach loop on the outer array (allArr), and inside it, run another forEach loop on the inner array (curElem) to access each element.
+
+
+// Q42 Find the longest consecutive sequence in an array.
+// 👉 Input: [100,4,200,1,3,2] → Output: 4 (bcoz 1,2,3,4 is longest sequence)
+
+let arr = [100, 4, 200, 1, 3, 2];
+let maxLength = 0;
+let num = new Set(arr)
+
+num.forEach((curElem) => {
+    // Check if curElem is sequence start
+    if (!num.has(curElem - 1)) {
+        let Count = 1;
+        let next = curElem + 1;
+
+        // Count consecutive numbers
+        while (num.has(next)) {
+            Count++;
+            next++
+        }
+        // Update max length
+        if (Count > maxLength) {
+            maxLength = Count;
+        }
     }
-});
 
-// arr2 ke elements add karo
-arr2.forEach((curElem) => {
-    if (!result.includes(curElem)) {
-        result.push(curElem);
-    }
-});
 
-console.log("Union is", result);
+})
+console.log("Longest consecutive sequence length is", maxLength);
 
-//If you have more than two arrays and don't want to apply forEach on each array separately, just put all the arrays in a single array (let allArr = [arr1, arr2, arr3]). Then, first run a forEach loop on the outer array (allArr), and inside it, run another forEach loop on the inner array (curElem) to access each element.
+//Set me daalo → sequence start identify → aage consecutive count → max track
