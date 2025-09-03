@@ -518,3 +518,5 @@ arr2.forEach((curElem) => {
 });
 
 console.log("Union is", result);
+
+//If you have more than two arrays and don't want to apply forEach on each array separately, just put all the arrays in a single array (let allArr = [arr1, arr2, arr3]). Then, first run a forEach loop on the outer array (allArr), and inside it, run another forEach loop on the inner array (curElem) to access each element.
