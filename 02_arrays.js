@@ -495,3 +495,26 @@
 
 // console.log(result);
 // Output: [1, 2, 3, 4, 5]
+
+
+// Q41) Find the union of two arrays (unique elements only).
+// 👉 Input: [1,2,3], [2,3,4] → Output: [1,2,3,4]
+
+let arr1 = [1, 2, 3]
+let arr2 = [2, 3, 4]
+let result = []
+// arr1 ke elements add karo
+arr1.forEach((curElem) => {
+    if (!result.includes(curElem)) {
+        result.push(curElem);
+    }
+});
+
+// arr2 ke elements add karo
+arr2.forEach((curElem) => {
+    if (!result.includes(curElem)) {
+        result.push(curElem);
+    }
+});
+
+console.log("Union is", result);
