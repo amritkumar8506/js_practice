@@ -1,16 +1,16 @@
-// Q1. Add an element "orange" at the end of this array:
+// ?Q1. Add an element "orange" at the end of this array:
 
 // let fruits = ["apple", "banana"];
 // fruits.push("orange");
 // console.log(fruits);
 
-// Q2. Remove the first element from the array:
+// ?Q2. Remove the first element from the array:
 
 // let cities = ["Delhi", "Mumbai", "Pune"];
 // cities.shift();
 // console.log(cities);
 
-// Q3. Double each number in this array using map():
+// ?Q3. Double each number in this array using map():
 
 // let numbers = [1, 2, 3, 4, 5];
 
@@ -19,7 +19,7 @@
 // })
 // console.log(double);
 
-// Q4. Filter out only even numbers:
+// ?Q4. Filter out only even numbers:
 
 // let nums = [1, 2, 3, 4, 5, 6];
 // let even = nums.filter((curElem) => {
@@ -28,7 +28,7 @@
 // console.log(even);
 
 
-// Q5. Return the first number greater than 10 using find():
+// ?Q5. Return the first number greater than 10 using find():
 
 // let arr = [3, 9, 12, 4, 7];
 // let newarr = arr.find(arr => arr > 10)
@@ -36,25 +36,25 @@
 // console.log(newarr);
 // console.log(arr);
 
-// Q6. Check if all elements are greater than 0 using every():
+// ?Q6. Check if all elements are greater than 0 using every():
 
 // let items = [5, 12, 18, 7];
 // let arr = items.every(items => items > 0);
 // console.log(arr);
 
-// Q7. Check if any number is negative using some():
+// ?Q7. Check if any number is negative using some():
 
 // let values = [4, -2, 0, 9];
 // let arr = values.some(values => values < 0)
 // console.log(arr);
 
-// Q8. Convert array of strings to one string using join():
+// ?Q8. Convert array of strings to one string using join():
 
 // let words = ["I", "love", "coding"];
 // let joinarr = words.join(" ")
 // console.log(joinarr);
 
-// Q9. Sum all numbers using reduce():
+// ?Q9. Sum all numbers using reduce():
 
 // let points = [10, 20, 30];
 
@@ -63,13 +63,13 @@
 // }, 0)
 // console.log(sum);
 
-// Q10. Remove "banana" from the array:
+// ?Q10. Remove "banana" from the array:
 
 // let fruits = ["apple", "banana", "mango"];
 // let newarr = fruits.splice(1, 1)
 // console.log(fruits);
 
-//  Q11. Return the square of all even numbers in an array
+//  ?Q11. Return the square of all even numbers in an array
 
 // let nums = [1, 2, 3, 4, 5, 6];
 // let newarr = nums.map((curElem) => {
@@ -82,20 +82,20 @@
 // let newarr = nums.filter((curElem) => curElem % 2 === 0).map((curElem) => curElem * curElem)
 // console.log(newarr);
 
-// Q12. Check if all numbers in the array are greater than 10
+// ?Q12. Check if all numbers in the array are greater than 10
 
 // let nums = [12, 15, 20, 11];
 // let newarr = nums.every(nums => nums > 10)
 // console.log(newarr);
 
-// Q13. Find the first string that starts with "A"
+// ?Q13. Find the first string that starts with "A"
 
 // let names = ["Raju", "Amit", "Ankit", "Ramesh"];
 // let newarr = names.find(names => names.startsWith("A"))
 
 // console.log(newarr);
 
-// Q14. Create a new array with only the lengths of each word
+// ?Q14. Create a new array with only the lengths of each word
 
 // let words = ["apple", "banana", "kiwi"];
 // let newarr = words.map((curElem) => {
@@ -103,7 +103,7 @@
 // })
 // console.log(newarr);
 
-//  Q15. Sum all odd numbers using reduce()
+//  ?Q15. Sum all odd numbers using reduce()
 
 // let nums = [1, 2, 3, 4, 5];
 // Expected: 9 (1 + 3 + 5)
@@ -118,7 +118,7 @@
 // }, 0)
 // console.log(newarr);
 
-// Q16. Check if at least one number is divisible by 7
+// ?Q16. Check if at least one number is divisible by 7
 
 // let nums = [13, 21, 45, 70];
 // Expected: true
@@ -127,7 +127,7 @@
 // console.log(newarr);
 
 
-// Q17. Sort an array of strings by length (ascending)
+// ?Q17. Sort an array of strings by length (ascending)
 
 // let arr = ["elephant", "dog", "cat", "hippopotamus"];
 // Expected: ["dog", "cat", "elephant", "hippopotamus"]
@@ -136,7 +136,7 @@
 // console.log(newarr);
 
 
-// Q18. Remove all falsy values from array (filter)
+// ?Q18. Remove all falsy values from array (filter)
 
 // let arr = [0, "hello", false, null, 42, "", undefined];
 
@@ -148,7 +148,7 @@
 // console.log(newarr);
 
 
-// Q19. Count how many times each item appears
+// ?Q19. Count how many times each item appears
 
 // let fruits = ["apple", "banana", "apple", "mango", "banana", "apple"];
 // Expected: { apple: 3, banana: 2, mango: 1 }
@@ -166,7 +166,7 @@
 
 
 
-// Q20. Capitalize the first letter of each word in a string.
+// ?Q20. Capitalize the first letter of each word in a string.
 // Input: "hello world" → Output: "Hello World"
 // let arr = "hello world";
 // let newarr = arr.split(" ");
@@ -175,7 +175,7 @@
 // console.log(str);
 
 
-// Q21. Convert an array of key-value pair arrays into an object.
+// ?Q21. Convert an array of key-value pair arrays into an object.
 // Input: [["name", "Amrit"], ["age", 24]] → Output: { name: "Amrit", age: 24 }
 
 // let arr = [["name", "Amrit"], ["age", 24]];
@@ -185,7 +185,7 @@
 //     result[key] = value)
 // console.log(result);
 
-// Q22. Create a function that flattens a nested array.
+// ?Q22. Create a function that flattens a nested array.
 // Input: [1, [2, [3, 4]], 5] → Output: [1, 2, 3, 4, 5]
 
 // let arr = [1, [2, [3, 4]], 5];
@@ -193,7 +193,7 @@
 // let newarr = arr.flat(Infinity)
 // console.log(newarr);
 
-// Q23. Count the number of vowels in a given string.
+// ?Q23. Count the number of vowels in a given string.
 // Input: "Javascript"
 
 
@@ -227,7 +227,7 @@
 // })
 // console.log(Count);
 
-// Q24. Given a string with numbers, extract all digits and return as an array.
+// ?Q24. Given a string with numbers, extract all digits and return as an array.
 // Input: "a1b2c3" → Output: [1, 2, 3]
 
 // let str = "a1b2c3"
@@ -240,7 +240,7 @@
 
 // "1" → isNaN("1") = false → !false = true → keep
 
-// Q25. Write a function that checks whether two strings are anagrams.
+// ?Q25. Write a function that checks whether two strings are anagrams.
 // Input: "listen" and "silent" → Output: true
 
 // let input = "listen,silent";
@@ -259,7 +259,7 @@
 // }
 
 
-// Q26. Create an object from two arrays: one for keys and one for values.
+// ?Q26. Create an object from two arrays: one for keys and one for values.
 // Input: ["name", "age"] and ["John", 30] → Output: { name: "John", age: 30 }
 
 // let key = ["name", "age"]
@@ -268,14 +268,14 @@
 // console.log(obj);
 
 
-// Q27. Write a function that removes duplicate values from an array and returns the result.
+// ?Q27. Write a function that removes duplicate values from an array and returns the result.
 // Input: [1, 2, 2, 3, 4, 4, 5] → Output: [1, 2, 3, 4, 5]
 
 // let arr = [1, 2, 2, 3, 4, 4, 5];
 // let newarr = [...new Set(arr)]
 // console.log(newarr);
 
-// Q28. You’re given an array of user objects. Extract all unique user roles.
+// ?Q28. You’re given an array of user objects. Extract all unique user roles.
 // let users = [
 //     { name: "Alice", role: "admin" },
 //     { name: "Bob", role: "editor" },
@@ -287,7 +287,7 @@
 // uniqueroles = [...new Set(roles)]
 // console.log(uniqueroles);
 
-// Q29)Remove all duplicates from an array without using Set.
+// ?Q29)Remove all duplicates from an array without using Set.
 
 // Input: [1, 2, 2, 3, 4, 4, 5] → Output: [1, 2, 3, 4, 5]
 // let arr = [1, 2, 2, 3, 4, 4, 5];
@@ -295,14 +295,14 @@
 // console.log(newarr);
 
 
-// Q30) Find the second largest number in an array.
+// ?Q30) Find the second largest number in an array.
 
 // let arr = [10, 50, 60, 30, 80]
 // let largest = Math.max(...arr)
 // let secondLargest = Math.max(...arr.filter((curElem) => curElem !== largest))
 // console.log(secondLargest);
 
-// Q31) Find the 3rd largest number in an array.
+// ?Q31) Find the 3rd largest number in an array.
 
 // DIIFERENT WAY->
 
@@ -316,7 +316,7 @@
 // console.log(thirdLargest);
 
 
-// Q32)Rotate an array by k positions.
+// ?Q32)Rotate an array by k positions.
 
 // (Right Rotation):
 
@@ -349,7 +349,7 @@
 // console.log(rotated);
 
 
-// Q33)Merge two sorted arrays into a single sorted array.
+// ?Q33)Merge two sorted arrays into a single sorted array.
 
 // let arr1 = [1, 3, 10, 5]
 // let arr2 = [2, 4, 6, 17]
@@ -360,7 +360,7 @@
 // console.log(result);
 
 
-// Q34)Count the frequency of each element in an array.
+// ?Q34)Count the frequency of each element in an array.
 
 // OUTPUT->
 // 1 → 1 time
@@ -388,7 +388,7 @@
 
 
 
-// Q35) TWO SUM -leedCode
+// ?Q35) TWO SUM -leedCode
 
 // Input: nums = [2,7,11,15], target = 9
 // Output: [0,1]
@@ -410,7 +410,7 @@
 
 
 
-// Q36 Move all zeros to the end of the array.
+// ?Q36 Move all zeros to the end of the array.
 
 
 // arr=[0, 1, 9, 8, 4, 0, 0, 2, 7, 0] -> OUTPUT=[1, 9, 8, 4, 2, 7, 0, 0, 0, 0]
@@ -423,7 +423,7 @@
 // console.log(result);
 
 
-// Q37)Find all pairs in an array whose sum equals a target number.
+// ?Q37)Find all pairs in an array whose sum equals a target number.
 
 // let arr = [2, 7, 11, 15]
 // let target = 9
@@ -435,7 +435,7 @@
 //     }
 // })
 
-// Q38)Check if an array is a subset of another array.
+// ?Q38)Check if an array is a subset of another array.
 
 
 // let arr1 = [1, 3, 4, 6]
@@ -455,7 +455,7 @@
 // }
 
 
-// Q39)Find the intersection of two arrays.
+// ?Q39)Find the intersection of two arrays.
 
 // arr1 = [1, 2, 3, 4]
 // arr2 = [3, 4, 5, 6]
@@ -471,7 +471,7 @@
 // console.log(result);
 
 
-// Q40) Flatten a deeply nested array without using flat().
+// ?Q40) Flatten a deeply nested array without using flat().
 
 //  Input: [1, [2, [3, 4]], 5] → Output: [1, 2, 3, 4, 5]
 
@@ -497,7 +497,7 @@
 // Output: [1, 2, 3, 4, 5]
 
 
-// Q41) Find the union of two arrays (unique elements only).
+// ?Q41) Find the union of two arrays (unique elements only).
 // 👉 Input: [1,2,3], [2,3,4] → Output: [1,2,3,4]
 
 // let arr1 = [1, 2, 3]
@@ -519,10 +519,10 @@
 
 // console.log("Union is", result);
 
-// //If you have more than two arrays and don't want to apply forEach on each array separately, just put all the arrays in a single array (let allArr = [arr1, arr2, arr3]). Then, first run a forEach loop on the outer array (allArr), and inside it, run another forEach loop on the inner array (curElem) to access each element.
+//TODO: //If you have more than two arrays and don't want to apply forEach on each array separately, just put all the arrays in a single array (let allArr = [arr1, arr2, arr3]). Then, first run a forEach loop on the outer array (allArr), and inside it, run another forEach loop on the inner array (curElem) to access each element.
 
 
-// Q42 Find the longest consecutive sequence in an array.
+// ?Q42 Find the longest consecutive sequence in an array.
 // 👉 Input: [100,4,200,1,3,2] → Output: 4 (bcoz 1,2,3,4 is longest sequence)
 
 // let arr = [100, 4, 200, 1, 3, 2];
