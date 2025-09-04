@@ -525,29 +525,52 @@
 // Q42 Find the longest consecutive sequence in an array.
 // 👉 Input: [100,4,200,1,3,2] → Output: 4 (bcoz 1,2,3,4 is longest sequence)
 
-let arr = [100, 4, 200, 1, 3, 2];
-let maxLength = 0;
-let num = new Set(arr)
+// let arr = [100, 4, 200, 1, 3, 2];
+// let maxLength = 0;
+// let num = new Set(arr)
 
-num.forEach((curElem) => {
-    // Check if curElem is sequence start
-    if (!num.has(curElem - 1)) {
-        let Count = 1;
-        let next = curElem + 1;
+// num.forEach((curElem) => {
+//     // Check if curElem is sequence start
+//     if (!num.has(curElem - 1)) {
+//         let Count = 1;
+//         let next = curElem + 1;
 
-        // Count consecutive numbers
-        while (num.has(next)) {
-            Count++;
-            next++
-        }
-        // Update max length
-        if (Count > maxLength) {
-            maxLength = Count;
-        }
+//         // Count consecutive numbers
+//         while (num.has(next)) {
+//             Count++;
+//             next++
+//         }
+//         // Update max length
+//         if (Count > maxLength) {
+//             maxLength = Count;
+//         }
+//     }
+
+
+// })
+// console.log("Longest consecutive sequence length is", maxLength);
+
+//Set me daalo → sequence start identify → aage consecutive count → max track
+
+
+// Rearrange array in max-min form.
+// 👉 Input: [1,2,3,4,5,6] → Output: [6,1,5,2,4,3]
+
+let arr = [1, 2, 3, 4, 5, 6, 7];
+let result = [];
+let start = 0;
+let end = arr.length - 1
+while (start <= end) {
+    //For Odd length array middle element
+    if (start === end) {
+        result.push(arr[start])
+    } else {
+        result.push(arr[end], arr[start])
     }
 
 
-})
-console.log("Longest consecutive sequence length is", maxLength);
+    start++;
+    end--;
+}
 
-//Set me daalo → sequence start identify → aage consecutive count → max track
+console.log(result);
