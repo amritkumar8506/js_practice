@@ -85,11 +85,33 @@
 
 //?👉 Input: "hello world" → Output: "Hello World"
 
-let str = "hello world from javascript"
-let newStr = str.split(" ")
+// let str = "hello world from javascript"
+// let newStr = str.split(" ")
+// // console.log(newStr);
+// let titleCase = newStr.map((curElem) => curElem[0].toUpperCase() + curElem.slice(1)).join(" ")
+// console.log(titleCase);
+
+
+//? Q6)Replace all vowels in a string with a specific character.
+
+//? 👉 Input: "hello world",replace vowels with * →  Output: "h*ll* w*rld"
+
+let str = "hello world"
+let replace = "*"
+let vowel = new Set(['a', 'e', 'i', 'o', 'u']);
+let newStr = str.split("")
 // console.log(newStr);
-let titleCase = newStr.map((curElem) => curElem[0].toUpperCase() + curElem.slice(1)).join(" ")
-console.log(titleCase);
+let output = newStr.map((curElem) => {
+    if (vowel.has(curElem)) {
+        curElem = replace
+        return replace;
+    } else {
+        return curElem
+    }
+
+})
+console.log(output.join(""));
+
 
 
 
