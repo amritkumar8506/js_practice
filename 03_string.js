@@ -96,21 +96,35 @@
 
 //? 👉 Input: "hello world",replace vowels with * →  Output: "h*ll* w*rld"
 
-let str = "hello world"
-let replace = "*"
-let vowel = new Set(['a', 'e', 'i', 'o', 'u']);
-let newStr = str.split("")
-// console.log(newStr);
-let output = newStr.map((curElem) => {
-    if (vowel.has(curElem)) {
-        curElem = replace
-        return replace;
-    } else {
-        return curElem
-    }
+// let str = "hello world"
+// let replace = "*"
+// let vowel = new Set(['a', 'e', 'i', 'o', 'u']);
+// let newStr = str.split("")
+// // console.log(newStr);
+// let output = newStr.map((curElem) => {
+//     if (vowel.has(curElem)) {
+//         curElem = replace
+//         return replace;
+//     } else {
+//         return curElem
+//     }
 
-})
-console.log(output.join(""));
+// })
+// console.log(output.join(""));
+
+
+//? Q7) Find all substrings of a string with length k.
+
+//? Input: String = "abcd", k = 2 →  Output: "ab", "bc", "cd"
+
+let str = "abcd";
+let k = 2;
+
+for (let start = 0; start <= str.length - k; start++) {
+    let newStr = str.substring(start, start + k)
+    console.log(newStr);
+
+}
 
 
 
