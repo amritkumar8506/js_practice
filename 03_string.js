@@ -115,16 +115,32 @@
 
 //? Q7) Find all substrings of a string with length k.
 
-//? Input: String = "abcd", k = 2 →  Output: "ab", "bc", "cd"
+//? 👉 Input: String = "abcd", k = 2 →  Output: "ab", "bc", "cd"
 
-let str = "abcd";
-let k = 2;
+// let str = "abcd";
+// let k = 2;
 
-for (let start = 0; start <= str.length - k; start++) {
-    let newStr = str.substring(start, start + k)
-    console.log(newStr);
+// for (let start = 0; start <= str.length - k; start++) {
+//     let newStr = str.substring(start, start + k)
+//     console.log(newStr);
+
+// }
+
+
+//? Q8) Check if a string contains unique characters.
+
+//? 👉Input: "hello" -> Output: false → because "l" is repeatin
+
+let str = "hello"
+isUnique = true
+for (let i = 0; i <= str.length - 1; i++) {
+    for (let j = i + 1; j <= str.length - 1; j++)  //j = i+1 → har pair ek hi baar check hota
+        if (str[i] === str[j]) {
+            isUnique = false
+        }
 
 }
+console.log(isUnique);
 
 
 
