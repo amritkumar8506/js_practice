@@ -36,19 +36,49 @@
 // console.log(reverse);
 
 
-//? Q3)Count the number of words in a sentence.  
+//? Q3)Count the number of words in a sentence.
 
 //?👉 Input: `"Hello World"` → Output: `2 Words`
 
-let str = "Hello World"
-// let newStr = str.split(" ")
-let count = 0;
-// console.log(newStr);
-str.forEach(() => {
+// let str = "Hello World"
+// // let newStr = str.split(" ")
+// let count = 0;
+// // console.log(newStr);
+// str.forEach(() => {
 
-    count += 1;
-})
-console.log(count);
+//     count += 1;
+// })
+// console.log(count);
+
+
+// ?Q4)Find the most frequent character in a string.
+
+//?👉 Input: `"Hello World"` → Output: "l" (becoz "l" appears 3 times (HIGHEST))
+
+
+let str = "Hello World"
+let result = {};
+let maxCount = 0
+let mostFrequentChar = "";
+
+for (let i = 0; i < str.length; i++) {
+    let char = str[i]
+    if (char === " ") continue;
+
+    if (result[char]) {
+        result[char] += 1;
+    } else {
+        result[char] = 1;
+    }
+
+    if (result[char] > maxCount) {
+        maxCount = result[char]
+        mostFrequentChar = char
+    }
+
+}
+
+console.log(`${mostFrequentChar} - ${maxCount} Times`);
 
 
 

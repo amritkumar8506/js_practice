@@ -481,7 +481,7 @@
 // function flattenArray(array) {
 //     array.forEach((curElem) => {
 // if (Array.isArray(curElem)) {
-// Agar element array hai → recursion call
+// //Agar element array hai → recursion call
 // flattenArray(curElem);
 // } else {
 // Agar element non-array → result me push
