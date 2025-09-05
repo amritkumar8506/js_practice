@@ -519,7 +519,7 @@
 
 // console.log("Union is", result);
 
-//TODO: //If you have more than two arrays and don't want to apply forEach on each array separately, just put all the arrays in a single array (let allArr = [arr1, arr2, arr3]). Then, first run a forEach loop on the outer array (allArr), and inside it, run another forEach loop on the inner array (curElem) to access each element.
+// //If you have more than two arrays and don't want to apply forEach on each array separately, just put all the arrays in a single array (let allArr = [arr1, arr2, arr3]). Then, first run a forEach loop on the outer array (allArr), and inside it, run another forEach loop on the inner array (curElem) to access each element.
 
 
 // ?Q42 Find the longest consecutive sequence in an array.
@@ -553,7 +553,7 @@
 //Set me daalo → sequence start identify → aage consecutive count → max track
 
 
-// Rearrange array in max-min form.
+//?Q43 Rearrange array in max-min form.
 // 👉 Input: [1,2,3,4,5,6] → Output: [6,1,5,2,4,3]
 
 let arr = [1, 2, 3, 4, 5, 6, 7];

@@ -1,4 +1,4 @@
-// Q1. Write a program that checks whether a number is positive, negative, or zero.
+// ?Q1. Write a program that checks whether a number is positive, negative, or zero.
 
 
 // let num = 1;
@@ -12,7 +12,7 @@
 //     console.log("number is negative")
 // }
 
-// Q2. Check if a number is even or odd.
+// ?Q2. Check if a number is even or odd.
 
 // let num = 55;
 // if (num % 2 === 0) {
@@ -23,7 +23,7 @@
 
 // }
 
-// Q3. Given a number, check whether it is divisible by both 5 and 11 or not.
+// ?Q3. Given a number, check whether it is divisible by both 5 and 11 or not.
 
 // let num = 75;
 // if (num % 5 === 0 && num % 11 === 0) {
@@ -34,7 +34,7 @@
 
 // }
 
-// Q4. Take a user's age and check if they are eligible to vote (age ≥ 18).
+// ?Q4. Take a user's age and check if they are eligible to vote (age ≥ 18).
 
 // let age = 15;
 // if (age < 18) {
@@ -45,7 +45,7 @@
 
 // }
 
-// Q5. Write a program to determine the largest of two numbers.
+// ?Q5. Write a program to determine the largest of two numbers.
 
 // let a = 7;
 // let b = 6;
@@ -57,7 +57,7 @@
 
 // }
 
-// Q6. Check whether a character is a vowel or a consonant.
+// ?Q6. Check whether a character is a vowel or a consonant.
 
 // let a = "p";
 // if (['a', 'e', 'i', 'o', 'u'].includes(a)) {
@@ -68,7 +68,7 @@
 
 // }
 
-// Q7. Given a number (1 to 7), print the day of the week using a switch.
+// ?Q7. Given a number (1 to 7), print the day of the week using a switch.
 
 
 // switch (day = 6) {
@@ -104,7 +104,7 @@
 // }
 
 
-// Q8. Write a program to check whether a year is a leap year or not.
+// ?Q8. Write a program to check whether a year is a leap year or not.
 // let year = 2001;
 // if ((year % 7 === 0 && year % 100 !== 0) || year % 400 === 0) {
 //     console.log("it is a leap year");
@@ -114,7 +114,7 @@
 
 // }
 
-// Q9 Check Palindrome (121->121)
+// ?Q9 Check Palindrome (121->121)
 
 // let i = 121;
 // let original = i;
