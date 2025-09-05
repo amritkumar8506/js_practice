@@ -56,29 +56,44 @@
 //?👉 Input: `"Hello World"` → Output: "l" (becoz "l" appears 3 times (HIGHEST))
 
 
-let str = "Hello World"
-let result = {};
-let maxCount = 0
-let mostFrequentChar = "";
+// let str = "Hello World"
+// let result = {};
+// let maxCount = 0
+// let mostFrequentChar = "";
 
-for (let i = 0; i < str.length; i++) {
-    let char = str[i]
-    if (char === " ") continue;
+// for (let i = 0; i < str.length; i++) {
+//     let char = str[i]
+//     if (char === " ") continue;
 
-    if (result[char]) {
-        result[char] += 1;
-    } else {
-        result[char] = 1;
-    }
+//     if (result[char]) {
+//         result[char] += 1;
+//     } else {
+//         result[char] = 1;
+//     }
 
-    if (result[char] > maxCount) {
-        maxCount = result[char]
-        mostFrequentChar = char
-    }
+//     if (result[char] > maxCount) {
+//         maxCount = result[char]
+//         mostFrequentChar = char
+//     }
 
-}
+// }
 
-console.log(`${mostFrequentChar} - ${maxCount} Times`);
+// console.log(`${mostFrequentChar} - ${maxCount} Times`);
+
+
+//? Q5) Convert a sentence to Title Case.
+
+//?👉 Input: "hello world" → Output: "Hello World"
+
+let str = "hello world from javascript"
+let newStr = str.split(" ")
+// console.log(newStr);
+let titleCase = newStr.map((curElem) => curElem[0].toUpperCase() + curElem.slice(1)).join(" ")
+console.log(titleCase);
+
+
+
+
 
 
 
