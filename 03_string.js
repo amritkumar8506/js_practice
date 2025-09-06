@@ -131,16 +131,71 @@
 
 //? 👉Input: "hello" -> Output: false → because "l" is repeatin
 
-let str = "hello"
-isUnique = true
-for (let i = 0; i <= str.length - 1; i++) {
-    for (let j = i + 1; j <= str.length - 1; j++)  //j = i+1 → har pair ek hi baar check hota
-        if (str[i] === str[j]) {
-            isUnique = false
-        }
+// let str = "hello"
+// isUnique = true
+// for (let i = 0; i <= str.length - 1; i++) {
+//     for (let j = i + 1; j <= str.length - 1; j++)  //j = i+1 → har pair ek hi baar check hota
+//         if (str[i] === str[j]) {
+//             isUnique = false
+//         }
 
-}
-console.log(isUnique);
+// }
+// console.log(isUnique);
+
+
+
+//? Q9) Find the first non-repeating character in a string
+
+//? 👉Input: "aabbccde" -> Output: "d"
+
+// let str = "aabbccde"
+// let result = {}
+
+//!FOR...OF()
+
+// for (let char of str) {
+//     if (result[char]) {
+//         result[char] += 1;
+//     } else {
+//         result[char] = 1
+//     }
+// }
+// for (let char of str) {
+//     if (result[char] === 1) {
+//         console.log(char);
+//         break;
+
+//     }
+// }
+// console.log(result);
+
+
+//!FOR LOOP()
+
+// // Step 1: frequency count
+// for (let i = 0; i < str.length; i++) {
+//     let char = str[i];
+//     if (result[char]) {
+//         result[char] += 1;
+//     } else {
+//         result[char] = 1;
+//     }
+// }
+
+// // Step 2: find first non-repeating character
+// let firstUnique = null;
+// for (let i = 0; i < str.length; i++) {
+//     let char = str[i];
+//     if (result[char] === 1) {
+//         firstUnique = char;
+//         break;
+//     }
+// }
+
+// console.log(firstUnique);
+
+
+
 
 
 
