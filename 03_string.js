@@ -200,35 +200,35 @@
 
 //? 👉Input: "abcde", "cdeab" -> Output: "true"
 
-let str1 = "abcde";
-let str2 = "cdeab";
+// let str1 = "abcde";
+// let str2 = "cdeab";
 
-let isRotation = false;
+// let isRotation = false;
 
-// Dono strings ki length same honi chahiye
-if (str1.length === str2.length) {
-    let n = str1.length;
+// // Dono strings ki length same honi chahiye
+// if (str1.length === str2.length) {
+//     let n = str1.length;
 
-    // Har possible rotation try karo
-    for (let i = 0; i < n; i++) {
-        let rotated = "";
+//     // Har possible rotation try karo
+//     for (let i = 0; i < n; i++) {
+//         let rotated = "";
 
-        // Rotate string: start index i se n characters
-        for (let j = 0; j < n; j++) {
-            rotated += str1[(i + j) % n]; //!ye decide karta hai ki string ke end ke baad kaunse character ko pick karna hai:Agar hum (i + j) = 6
-            //!(6 % 5) = 1(Matlab index 6 ko wrap karke 1 bana diya)
+//         // Rotate string: start index i se n characters
+//         for (let j = 0; j < n; j++) {
+//             rotated += str1[(i + j) % n]; //!ye decide karta hai ki string ke end ke baad kaunse character ko pick karna hai:Agar hum (i + j) = 6
+//             //!(6 % 5) = 1(Matlab index 6 ko wrap karke 1 bana diya)
 
-        }
+//         }
 
-        // Agar match ho gaya, break karo
-        if (rotated === str2) {
-            isRotation = true;
-            break;
-        }
-    }
-}
+//         // Agar match ho gaya, break karo
+//         if (rotated === str2) {
+//             isRotation = true;
+//             break;
+//         }
+//     }
+// }
 
-console.log(isRotation); // Output: true
+// console.log(isRotation); // Output: true
 
 
 
